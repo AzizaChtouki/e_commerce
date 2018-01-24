@@ -8,7 +8,7 @@
 			<div class="panel panel-primary">
 				
 				<div class="panel-heading">
-					<h4>Personal Details</h4>
+					<h4>Details des informations personnel</h4>
 				</div>
 			
 				<div class="panel-body">
@@ -18,7 +18,7 @@
 						<h4>Contact : <strong>${registerModel.user.contactNumber}</strong></h4>
 						<h4>Role : <strong>${registerModel.user.role}</strong></h4>
 						<p>
-							<a href="${flowExecutionUrl}&_eventId_personal" class="btn btn-primary">Edit</a>
+							<a href="${flowExecutionUrl}&_eventId_personal" class="btn btn-primary">Modifier</a>
 						</p>
 					</div>
 				</div>
@@ -33,7 +33,7 @@
 			<div class="panel panel-primary">
 				
 				<div class="panel-heading">
-					<h4>Billing Address</h4>
+					<h4>Adresse de facturation</h4>
 				</div>
 			
 				<div class="panel-body">
@@ -44,7 +44,7 @@
 						<p>${registerModel.billing.state}</p>
 						<p>${registerModel.billing.country}</p>
 						<p>
-							<a href="${flowExecutionUrl}&_eventId_billing" class="btn btn-primary">Edit</a>
+							<a href="${flowExecutionUrl}&_eventId_billing" class="btn btn-primary">Modifier</a>
 						</p>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 			
 			<div class="text-center">
 				
-				<a href="${flowExecutionUrl}&_eventId_submit" class="btn btn-lg btn-primary">Confirm</a>
+				<a href="${flowExecutionUrl}&_eventId_submit" class="btn btn-lg btn-primary">Confirmer</a>
 				
 			</div>
 			

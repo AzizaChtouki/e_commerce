@@ -8,7 +8,7 @@
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
@@ -28,7 +28,7 @@
 <link href="${css}/myapp.css" rel="stylesheet">
 
 
-<title>Online Shopping - ${title}</title>
+<title>IA-Commerce - ${title}</title>
 
 </head>
 

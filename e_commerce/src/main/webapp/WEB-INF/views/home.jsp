@@ -58,7 +58,7 @@
 
 				<div class="row">
                 	<div class="col-xs-12">
-                		<h3>Our Most Viewed Products</h3>
+                		<h3>Nos produits les plus consultés</h3>
                 		<hr/>
                 	</div>
                 </div>
@@ -71,25 +71,25 @@
                             <h5>{{product.name}}</h5>
                             <hr/>
                             <div class="caption">
-                                <h4 class="pull-right">&#8377; {{product.unitPrice}}</h4>
+                                <h4 class="pull-right">Dh {{product.unitPrice}}</h4>
                                 <p>{{product.description}}</p>
-                                <a ng-href="${contextRoot}/show/{{product.id}}/product" class="btn btn-primary pull-right">View</a>
+                                <a ng-href="${contextRoot}/show/{{product.id}}/product" class="btn btn-primary pull-right">Vue</a>
                             </div>
                         </div>
                         
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4>Checkout more products!</h4>
+                        
                         <hr/>
-                        <a class="btn btn-primary" href="${contextRoot}/show/all/products">More Products</a>
+                        <a class="btn btn-primary" href="${contextRoot}/show/all/products">plus des produits</a>
                     </div>
 
                 </div>
 				
 				<div class="row">
                 	<div class="col-xs-12">
-                		<h3>Our Most Purchased Products</h3>
+                		<h3>Nos produits les plus achetés</h3>
                 		<hr/>
                 	</div>
                 </div>
@@ -101,17 +101,17 @@
                             <h5>{{product.name}}</h5>
                             <hr/>
                             <div class="caption">
-                                <h4 class="pull-right">&#8377; {{product.unitPrice}}</h4>
+                                <h4 class="pull-right">Dh {{product.unitPrice}}</h4>
                                 <p>{{product.description}}</p>
-                                <a ng-href="${contextRoot}/show/{{product.id}}/product" class="btn btn-primary pull-right">View</a>
+                                <a ng-href="${contextRoot}/show/{{product.id}}/product" class="btn btn-primary pull-right">Vue</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4>Checkout more products!</h4>
+                        
                         <hr/>
-                        <a class="btn btn-primary" href="${contextRoot}/show/all/products">More Products</a>
+                        <a class="btn btn-primary" href="${contextRoot}/show/all/products">plus des produits</a>
                     </div>
 
                 </div>

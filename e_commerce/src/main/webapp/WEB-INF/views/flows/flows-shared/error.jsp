@@ -28,7 +28,7 @@
 <link href="${css}/myapp.css" rel="stylesheet">
 
 
-<title>Online Shopping - FlowException</title>
+<title>E-commerce</title>
 
 </head>
 
@@ -57,7 +57,7 @@
 						
 						<div class="jumbotron">
 						
-							<h1>Please contact your administrator!</h1>
+							<h1>s'il vous plaît contactez votre administrateur !</h1>
 							<hr/>
 						
 							<blockquote style="word-wrap:break-word">

@@ -6,11 +6,11 @@
 		
 		<div class="col-sm-offset-4 col-sm-4">
 			<div class="text-center">		
-				<h1>Welcome!</h1>
-				<h3>onlineshopping.com</h3>
-				<h6>You can use your email address as username to login!</h6>
+				<h1>Bienvenue!</h1>
+				<h3>IA-Commerce</h3>
+				<h6>Vous pouvez utiliser votre adresse e-mail comme nom d'utilisateur pour vous connecter!</h6>
 				<div>
-					<a href="${contextRoot}/login" class="btn btn-lg btn-success">Login Here</a>
+					<a href="${contextRoot}/login" class="btn btn-lg btn-success">Connectez-vous</a>
 				</div>
 			</div>
 		</div>

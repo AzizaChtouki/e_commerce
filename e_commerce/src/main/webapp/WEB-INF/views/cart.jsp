@@ -15,10 +15,10 @@
 			<table id="cart" class="table table-hover table-condensed">
 			   	<thead>
 					<tr>
-						<th style="width:50%">Product</th>
-						<th style="width:10%">Price</th>
-						<th style="width:8%">Quantity</th>
-						<th style="width:22%" class="text-center">Subtotal</th>
+						<th style="width:50%">Produit</th>
+						<th style="width:10%">Prix</th>
+						<th style="width:8%">Quantité</th>
+						<th style="width:22%" class="text-center">Total</th>
 						<th style="width:10%"></th>
 					</tr>
 				</thead>
@@ -36,19 +36,19 @@
 								<div class="col-sm-10">
 									<h4 class="nomargin">${cartLine.product.name} 
 										<c:if test="${cartLine.available == false}">
-											<strong style="color:red">(Not Available)</strong> 
+											<strong style="color:red">(Indisponible)</strong> 
 										</c:if>
 									</h4>
-									<p>Brand : ${cartLine.product.brand}</p>
+									<p>Marque : ${cartLine.product.brand}</p>
 									<p>Description : ${cartLine.product.description}
 								</div>
 							</div>
 						</td>
-						<td data-th="Price"> &#8377; ${cartLine.buyingPrice} /-</td>
+						<td data-th="Price"> Dh ${cartLine.buyingPrice} /-</td>
 						<td data-th="Quantity">
 							<input type="number" id="count_${cartLine.id}" class="form-control text-center" value="${cartLine.productCount}" min="1" max="3">
 						</td>
-						<td data-th="Subtotal" class="text-center">&#8377; ${cartLine.total} /-</td>
+						<td data-th="Subtotal" class="text-center">Dh ${cartLine.total} /-</td>
 						<td class="actions" data-th="">
 							<c:if test="${cartLine.available == true}">
 								<button type="button" name="refreshCart" class="btn btn-info btn-sm" value="${cartLine.id}"><span class="glyphicon glyphicon-refresh"></span></button>
@@ -60,19 +60,19 @@
 				</tbody>
 				<tfoot>
 					<tr class="visible-xs">
-						<td class="text-center"><strong>Total &#8377; ${userModel.cart.grandTotal}</strong></td>
+						<td class="text-center"><strong>Total Dh ${userModel.cart.grandTotal}</strong></td>
 					</tr>
 					<tr>
-						<td><a href="${contextRoot}/show/all/products" class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left"></span> Continue Shopping</a></td>
+						<td><a href="${contextRoot}/show/all/products" class="btn btn-warning"><span class="glyphicon glyphicon-chevron-left"></span> Continuer vos achats</a></td>
 						<td colspan="2" class="hidden-xs"></td>
-						<td class="hidden-xs text-center"><strong>Total &#8377; ${userModel.cart.grandTotal}/-</strong></td>
+						<td class="hidden-xs text-center"><strong>Total Dh ${userModel.cart.grandTotal}/-</strong></td>
 						
 						<c:choose>
 							<c:when test="${availableCount != 0}">
-								<td><a href="${contextRoot}/cart/validate" class="btn btn-success btn-block">Checkout <span class="glyphicon glyphicon-chevron-right"></span></a></td>
+								<td><a href="${contextRoot}/cart/validate" class="btn btn-success btn-block">Payer <span class="glyphicon glyphicon-chevron-right"></span></a></td>
 							</c:when>							
 							<c:otherwise>
-								<td><a href="javascript:void(0)" class="btn btn-success btn-block disabled"><strike>Checkout <span class="glyphicon glyphicon-chevron-right"></span></strike></a></td>
+								<td><a href="javascript:void(0)" class="btn btn-success btn-block disabled"><strike>Payer <span class="glyphicon glyphicon-chevron-right"></span></strike></a></td>
 							</c:otherwise>
 						</c:choose>						
 					</tr>
@@ -85,7 +85,7 @@
 			
 			<div class="jumbotron">
 				
-				<h3 class="text-center">Your Cart is Empty!</h3>
+				<h3 class="text-center">Notre panier est vide!</h3>
 			
 			</div>
 		

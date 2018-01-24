@@ -2,10 +2,12 @@
 
 	<div class="row">	
 		
-		<h1>Contact Us</h1>
+		<h1>Contactez nous</h1>
 		<hr/>
-		<p>This is an contact us page</p>	
-	
+		<p> <span>Nous joindre sur<br>les r&eacute;seaux sociaux</span></p>	
+
+							
+				
 	</div>
 
 

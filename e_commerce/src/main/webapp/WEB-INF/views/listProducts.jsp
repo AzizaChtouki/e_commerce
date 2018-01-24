@@ -28,7 +28,7 @@
 
 
 							<li><a href="${contextRoot}/home">Home</a></li>
-							<li class="active">All Products</li>
+							<li class="active">Tous les produits</li>
 
 
 						</ol>
@@ -44,7 +44,7 @@
 
 
 							<li><a href="${contextRoot}/home">Home</a></li>
-							<li class="active">Category</li>
+							<li class="active">Categorie</li>
 							<li class="active">${category.name}</li>
 
 
@@ -70,10 +70,10 @@
 						
 							<tr>
 								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
+								<th>Nom</th>
+								<th>Marque</th>
+								<th>Prix</th>
+								<th>Quantité disponible</th>
 								<th></th>
 							
 							</tr>
@@ -85,10 +85,10 @@
 						
 							<tr>
 								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
+								<th>Nom</th>
+								<th>Marque</th>
+								<th>Prix</th>
+								<th>Quantité disponible</th>
 								<th></th>
 							
 							</tr>

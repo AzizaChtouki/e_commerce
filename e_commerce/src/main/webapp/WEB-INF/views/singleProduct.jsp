@@ -9,7 +9,7 @@
 			<ol class="breadcrumb">
 			
 				<li><a href="${contextRoot}/home">Home</a></li>
-				<li><a href="${contextRoot}/show/all/products">Products</a></li>
+				<li><a href="${contextRoot}/show/all/products">Les produits</a></li>
 				<li class="active">${product.name}</li>
 			
 			</ol>
@@ -44,7 +44,7 @@
 			<p>${product.description}</p>
 			<hr/>
 			
-			<h4>Price: <strong> &#8377; ${product.unitPrice} /-</strong></h4>
+			<h4>Prix: <strong> Dh ${product.unitPrice} /-</strong></h4>
 			<hr/>
 			
 			
@@ -53,12 +53,12 @@
 				
 				<c:when test="${product.quantity < 1}">
 				
-					<h6>Qty. Available: <span style="color:red">Out of Stock!</span></h6>
+					<h6>Quantité disponible: <span style="color:red">Non dispo!</span></h6>
 					
 				</c:when>
 				<c:otherwise>				
 					
-					<h6>Qty. Available: ${product.quantity}</h6>
+					<h6>Quantité disponible: ${product.quantity}</h6>
 						
 				</c:otherwise>
 			
@@ -72,13 +72,13 @@
 				<c:when test="${product.quantity < 1}">
 				
 					<a href="javascript:void(0)" class="btn btn-success disabled"><strike>
-					<span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</strike></a>
+					<span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</strike></a>
 					
 				</c:when>
 				<c:otherwise>				
 				
 				<a href="${contextRoot}/cart/add/${product.id}/product" class="btn btn-success">
-				<span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</a>
+				<span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</a>
 				
 				
 				
@@ -91,13 +91,13 @@
 			
 			<security:authorize access="hasAuthority('ADMIN')">
 				<a href="${contextRoot}/manage/${product.id}/product" class="btn btn-success">
-				<span class="glyphicon glyphicon-pencil"></span> Edit</a>
+				<span class="glyphicon glyphicon-pencil"></span> Modifier</a>
 			</security:authorize>	
 						
 			
 
 			<a href="${contextRoot}/show/all/products" class="btn btn-warning">
-				Continue Shopping</a>
+				Continuer vos achats</a>
 					
 		</div>
 

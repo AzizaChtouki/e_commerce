@@ -65,7 +65,7 @@ $(function() {
 				.DataTable({
 
 					lengthMenu : [ [ 3, 5, 10, -1 ],
-							[ '3 Records', '5 Records', '10 Records', 'ALL' ] ],
+							[ '3 items', '5 items', '10 items', 'all' ] ],
 					pageLength : 5,
 					ajax : {
 						url : jsonUrl,
@@ -92,7 +92,7 @@ $(function() {
 							{
 								data : 'unitPrice',
 								mRender : function(data, type, row) {
-									return '&#8377; ' + data
+									return 'Dh' + data
 								}
 							},
 							{
@@ -100,7 +100,7 @@ $(function() {
 								mRender : function(data, type, row) {
 
 									if (data < 1) {
-										return '<span style="color:red">Out of Stock!</span>';
+										return '<span style="color:red">Non Dispo !!</span>';
 									}
 
 									return data;
@@ -160,7 +160,7 @@ $(function() {
 		console.log(jsonUrl);
 		
 		$productsTable.DataTable({
-					lengthMenu : [ [ 10, 30, 50, -1 ], [ '10 Records', '30 Records', '50 Records', 'ALL' ] ],
+					lengthMenu : [ [ 10, 30, 50, -1 ], [ '10 items', '30 items', '50 items', 'all' ] ],
 					pageLength : 30,
 					ajax : {
 						url : jsonUrl,
@@ -189,7 +189,7 @@ $(function() {
 									mRender : function(data, type, row) {
 
 										if (data < 1) {
-											return '<span style="color:red">Out of Stock!</span>';
+											return '<span style="color:red">Non dispo !</span>';
 										}
 
 										return data;
@@ -199,7 +199,7 @@ $(function() {
 								{
 									data : 'unitPrice',
 									mRender : function(data, type, row) {
-										return '&#8377; ' + data
+										return 'Dh ' + data
 									}
 								},
 								{
@@ -238,13 +238,13 @@ $(function() {
 					initComplete: function () {
 						var api = this.api();
 						api.$('.switch input[type="checkbox"]').on('change' , function() {							
-							var dText = (this.checked)? 'You want to activate the Product?': 'You want to de-activate the Product?';
+							var dText = (this.checked)? 'vous voulez activer le produit ?': 'vous voulez desactivater le produit ?';
 							var checked = this.checked;
 							var checkbox = $(this);
 							debugger;
 						    bootbox.confirm({
 						    	size: 'medium',
-						    	title: 'Product Activation/Deactivation',
+						    	title: 'produit Activation/Deactivation',
 						    	message: dText,
 						    	callback: function (confirmed) {
 							        if (confirmed) {
@@ -314,12 +314,12 @@ $(function() {
 				},
 				messages: {					
 					name: {
-						required: 'Please enter product name!',
-						minlength: 'Please enter atleast five characters'
+						required: 'SVP entrez le nom du produit!',
+						minlength: 'Veuillez entrer au moins cinq caractères'
 					},
 					description: {
-						required: 'Please enter product name!',
-						minlength: 'Please enter atleast five characters'
+						required: 'Veuillez entrer le nom du produit!',
+						minlength: 'Veuillez entrer au moins cinq caractères'
 					}					
 				},
 				errorElement : "em",
@@ -353,11 +353,11 @@ $(function() {
 				},
 				messages: {					
 					username: {
-						required: 'Please enter your email!',
-						email: 'Please enter a valid email address!'
+						required: 's il vous plait entrez votre email!',
+						email: 's il vous plait entrez un email valide!'
 					},
 					password: {
-						required: 'Please enter your password!'
+						required: 's il vous plait entrez votre mot de passe!'
 					}					
 				},
 				errorElement : "em",
@@ -401,7 +401,7 @@ $(function() {
 				bootbox.alert({
 					size: 'medium',
 			    	title: 'Error',
-			    	message: 'Product Count should be minimum 1 and maximum 3!'
+			    	message: 'la quantité doit etre 1 au 3 au maximum!'
 				});
 			}
 			else {

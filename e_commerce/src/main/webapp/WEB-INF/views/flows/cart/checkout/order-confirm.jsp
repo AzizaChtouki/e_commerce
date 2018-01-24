@@ -19,7 +19,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Shopping - Membership</title>
+<title>Membre de IA-Commerce</title>
 
 <script>
 
@@ -58,7 +58,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
            <div class="navbar-header">
-               <a class="navbar-brand" href="${contextRoot}/home">Online Shopping</a>
+               <a class="navbar-brand" href="${contextRoot}/home">IA-Commerce</a>
            </div>
 		</div>
 	</nav>
@@ -69,18 +69,18 @@
 	<div class="content">
 		<div class="container">
 			<div class="alert alert-success">
-				<h3 class="text-center">Your Order is Confirmed!!</h3>
+				<h3 class="text-center">Votre commande est confirmée ^^</h3>
 			</div>
 		    <div class="row">
 		        <div class="col-xs-12">
 		    		<div class="invoice-title">
-		    			<h2>Invoice</h2><h3 class="pull-right">Order # ${orderDetail.id}</h3>
+		    			<h2>Facture d'achat</h2><h3 class="pull-right">Commande # ${orderDetail.id}</h3>
 		    		</div>
 		    		<hr>
 		    		<div class="row">
 		    			<div class="col-xs-6">
 		    				<address>
-		    				<strong>Billed To:</strong><br>
+		    				<strong>Facturé à:</strong><br>
 		    					${orderDetail.user.firstName} ${orderDetail.user.lastName}<br>
 		    					${orderDetail.billing.addressLineOne}<br>
 		    					${orderDetail.billing.addressLineTwo}<br>
@@ -90,7 +90,7 @@
 		    			</div>
 		    			<div class="col-xs-6 text-right">
 		    				<address>
-		        			<strong>Shipped To:</strong><br>
+		        			<strong>Expédiés à:</strong><br>
 		    					${orderDetail.user.firstName} ${orderDetail.user.lastName}<br>
 		    					${orderDetail.shipping.addressLineOne}<br>
 		    					${orderDetail.shipping.addressLineTwo}<br>
@@ -102,14 +102,14 @@
 		    		<div class="row">
 		    			<div class="col-xs-6">
 		    				<address>
-		    					<strong>Payment Method:</strong><br>
-		    					Card Payment <br>
+		    					<strong>Méthode de paiment:</strong><br>
+		    					Carte Bancaire <br>
 		    					${orderDetail.user.email}
 		    				</address>
 		    			</div>
 		    			<div class="col-xs-6 text-right">
 		    				<address>
-		    					<strong>Order Date:</strong><br>
+		    					<strong>Date de commande:</strong><br>
 		    					${orderDetail.orderDate}<br><br>
 		    				</address>
 		    			</div>
@@ -121,17 +121,17 @@
 		    	<div class="col-md-12">
 		    		<div class="panel panel-default">
 		    			<div class="panel-heading">
-		    				<h3 class="panel-title"><strong>Order summary</strong></h3>
+		    				<h3 class="panel-title"><strong>Résume</strong></h3>
 		    			</div>
 		    			<div class="panel-body">
 		    				<div class="table-responsive">
 		    					<table class="table table-condensed">
 		    						<thead>
 		                                <tr>
-		        							<td><strong>Item</strong></td>
-		        							<td class="text-center"><strong>Price</strong></td>
-		        							<td class="text-center"><strong>Quantity</strong></td>
-		        							<td class="text-right"><strong>Totals</strong></td>
+		        							<td><strong>Article</strong></td>
+		        							<td class="text-center"><strong>Prix</strong></td>
+		        							<td class="text-center"><strong>Quantité</strong></td>
+		        							<td class="text-right"><strong>Totale</strong></td>
 		                                </tr>
 		    						</thead>
 		    						<tbody>
@@ -152,7 +152,7 @@
 		    	</div>
 		    </div>
 		    <div class="text-center">
-		    	<a href="${contextRoot}/show/all/products" class="btn btn-lg btn-warning">Continue Shopping</a>
+		    	<a href="${contextRoot}/show/all/products" class="btn btn-lg btn-warning">Continuer vos achats</a>
 		    </div>
 		</div>
 <%@include file="../../flows-shared/footer.jsp" %>	
